@@ -1,0 +1,10 @@
+# this file is located in /etc/ansible/windows_project
+# windows_project is a fav name
+- name: Change the hostname to HQ-IIS
+  ansible.windows.win_hostname:
+    name: HQ-IIS
+  register: res
+
+- name: Reboot
+  ansible.windows.win_reboot:
+  when: res.reboot_required

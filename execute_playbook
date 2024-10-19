@@ -1,1 +1,2 @@
 # Execute your playbook
+ansible-playbook /etc/ansible/ /rename_hostname.yml

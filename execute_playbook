@@ -1,2 +1,2 @@
-# Execute your playbook
-ansible-playbook /etc/ansible/ /rename_hostname.yml
+# Execute your playbook in ansible control server
+ansible-playbook /etc/ansible/windows_project/rename_hostname.yml
